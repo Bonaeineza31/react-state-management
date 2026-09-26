@@ -1,8 +1,29 @@
 # React State Management (Theme Switcher & Task Manager)
 
-This is a React application built with TypeScript and Vite. It demonstrates state management in React using:
-- useContext for global theme switching (Light Mode and Dark Mode).
-- useReducer for managing task state in a task manager.
+A React app built with TypeScript and Vite demonstrating state management using:
+- useContext for global theme switching (Light and Dark mode).
+- useReducer for task management (add & remove tasks).
+
+---
+
+## How to Run the App
+
+1. Clone this repository:
+   `ash
+   git clone <your-repository-url>
+   cd react-state-management
+   `
+
+2. Install project packages:
+   `ash
+   npm install
+   `
+
+3. Start the dev server:
+   `ash
+   npm run dev
+   `
+   Open http://localhost:5173 in your browser.
 
 ---
 
@@ -19,47 +40,32 @@ This is a React application built with TypeScript and Vite. It demonstrates stat
 
 ---
 
-## Features
+## Folder Structure
 
-- **Theme Switcher**: Toggle between Light Theme and Dark Theme across the app.
-- **Task Manager**: Add and delete tasks using a React reducer.
-
----
-
-## How to Install and Run
-
-### Prerequisites
-- Node.js installed on your computer.
-
-### Setup Steps
-
-1. **Clone the repository:**
-   `ash
-   git clone <your-repository-url>
-   cd react-state-management
-   `
-
-2. **Install dependencies:**
-   `ash
-   npm install
-   `
-
-3. **Start the development server:**
-   `ash
-   npm run dev
-   `
-
-4. **Open in browser:**
-   Go to http://localhost:5173/ in your browser.
+`
+react-state-management/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx          # Top navbar with theme toggle button
+│   │   ├── Navbar.module.css   # Navbar styles
+│   │   ├── TaskManager.tsx     # Task add/remove component
+│   │   └── TaskManager.module.css  # TaskManager styles
+│   ├── constants/
+│   │   └── theme.ts            # LIGHT_THEME and DARK_THEME constants
+│   ├── context/
+│   │   └── ThemeContext.tsx    # Theme context, provider, and useTheme hook
+│   ├── reducers/
+│   │   └── taskReducer.ts      # Reducer for add/remove task actions
+│   ├── App.tsx                 # Root component with ThemeProvider
+│   ├── App.css                 # Global app layout styles
+│   └── main.tsx                # React entry point
+├── instructions.md             # Assessment instructions
+├── README.md                   # Project documentation
+└── package.json
+`
 
 ---
 
-## Project Structure
+## Assignment Instructions
 
-- src/constants/theme.ts: Theme name constants (LIGHT_THEME and DARK_THEME).
-- src/context/ThemeContext.tsx: Context provider and custom hook for theme switching.
-- src/components/Navbar.tsx: Navbar component with a button to toggle themes.
-- src/reducers/taskReducer.ts: Reducer function for adding and removing tasks.
-- src/components/TaskManager.tsx: Task manager component.
-- src/App.tsx: Root component wrapping everything in ThemeProvider.
-- instructions.md: Detailed activity instructions.
+Full step-by-step activity instructions are available in [instructions.md](./instructions.md).
