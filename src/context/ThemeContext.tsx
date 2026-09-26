@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState, ReactNode } from "react";
-import { LIGHT_THEME, DARK_THEME } from "../constants/theme";
+import { createContext, useContext, useState, type ReactNode } from 'react';
+import { LIGHT_THEME, DARK_THEME } from '../constants/theme';
 
 type Theme = typeof LIGHT_THEME | typeof DARK_THEME;
 
@@ -27,8 +27,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (!context) {
-    throw new Error("useTheme must be used within a ThemeProvider");
+    throw new Error('useTheme must be used within a ThemeProvider');
   }
   return context;
 };
-
