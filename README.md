@@ -1,48 +1,49 @@
-# React State Management (Theme Switcher & Task Manager)
+# **React State Management (Theme Switcher & Task Manager)**
 
-A React app built with TypeScript and Vite demonstrating state management using:
-- useContext for global theme switching (Light and Dark mode).
-- useReducer for task management (add & remove tasks).
+A React application built with **TypeScript** and **Vite** demonstrating state management using React's **Context API (`useContext`)** for global theme switching and **`useReducer`** for managing complex state in a task manager.
 
 ---
 
-## How to Run the App
+## **Features**
+- **Global Theme Switcher (`useContext`)**: Switch seamlessly between Light and Dark themes across the application.
+- **Task Manager (`useReducer`)**: Add and remove tasks with predictable state transitions powered by a React reducer.
+- **Custom Theme Palette**: Beautifully styled UI supporting custom Light & Dark mode colors.
 
-1. Clone this repository:
-   `ash
-   git clone <your-repository-url>
+---
+
+
+## **Installation & Running Locally**
+
+### **Prerequisites**
+- Node.js (v18 or higher recommended)
+- `npm` (comes with Node.js)
+
+## **Setup Steps**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Bonaeineza31/react-state-management.git 
    cd react-state-management
-   `
-
-2. Install project packages:
-   `ash
+   ```
+   
+2. **Install dependencies:**
+   ```bash
    npm install
-   `
-
-3. Start the dev server:
-   `ash
+   ```
+3. **Start the development server:**
+   ```bash
    npm run dev
-   `
-   Open http://localhost:5173 in your browser.
+   ```
+4. **Open in Browser:**  
+   Navigate to `http://localhost:5173/` in your web browser.
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
 
 ---
 
-## Color Palette
-
-| Theme | Element | Hex Color |
-| :--- | :--- | :--- |
-| Light Theme | Background | #FFFFFF |
-| Light Theme | Text | #000000 |
-| Light Theme | Button | #1E90FF |
-| Dark Theme | Background | #242629 |
-| Dark Theme | Text | #FFFFFF |
-| Dark Theme | Button | #85D1B0 |
-
----
-
-## Folder Structure
-
-`
+##  **Project Structure**
+```
 react-state-management/
 ├── src/
 │   ├── components/
@@ -62,10 +63,8 @@ react-state-management/
 ├── instructions.md             # Assessment instructions
 ├── README.md                   # Project documentation
 └── package.json
-`
-
+```
 ---
 
-## Assignment Instructions
-
-Full step-by-step activity instructions are available in [instructions.md](./instructions.md).
+**Assignment Instructions**
+Full step-by-step activity guidelines can be found in [instructions.md ](.\/instructions.md).
